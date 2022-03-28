@@ -1,0 +1,32 @@
+.login {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .error {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-weight: 300;
+  }
+
+  .inputBox {
+    margin-top: 15px;
+
+    input, div {
+      width: 100%;
+    }
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 20px;
+
+  }
+}

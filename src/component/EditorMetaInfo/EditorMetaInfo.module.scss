@@ -1,0 +1,52 @@
+@import "src/styles/variables";
+
+
+.EditorMetaInfo {
+  position: absolute;
+  width: 400px;
+  height: 100vh;
+  background: white;
+  padding: 20px;
+  box-shadow: -4px 10px 20px rgba(0, 0, 0, 0.05);
+  z-index: 9;
+  right: -400px;
+  transition: 0.5s all;
+
+  .radioButtons {
+    margin-top: 20px;
+
+    label {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+      span {
+        width: 50px;
+      }
+    }
+  }
+
+  .buttonBox {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    div {
+      cursor: pointer;
+      background: $mainColor;
+      padding: 8px 15px;
+      font-size: 14px;
+      margin-left: 15px;
+      color: white;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.slide {
+  right: 0;
+}

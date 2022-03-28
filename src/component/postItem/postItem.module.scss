@@ -1,0 +1,79 @@
+@import "../../styles/variables";
+
+.postItem {
+  display: flex;
+
+  a {
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  div {
+    //border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  div:not(:last-child) {
+    border-right: 1px solid black;
+  }
+
+  .check, .number {
+    width: $width5;
+    min-width: $width5;
+  }
+
+  .content {
+    width: $width50;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start !important;
+    //justify-content: start;
+    //max-width: 50%;
+    //min-width: 50%;
+    //white-space: nowrap;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+  }
+
+  .createdAt {
+    width: $width10;
+    min-width: $width10;
+  }
+
+  .viewed, .reply, .setting {
+    width: $width10;
+    min-width: $width10;
+    display: flex;
+    gap: 20px;
+
+    span {
+      cursor: pointer;
+      display: flex;
+      font-size: 1.2rem;
+      position: relative;
+
+      a {
+        border: none;
+      }
+
+      &:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        height: 100%;
+        right: -60%;
+        top: -5%;
+      }
+    }
+
+  }
+
+}
+

@@ -1,0 +1,85 @@
+.post {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .container {
+    margin-top: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 95%;
+
+    .item:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 35px;
+      cursor: pointer;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+      }
+
+      span:nth-child(1) {
+        min-width: 50px;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      span:nth-child(2) {
+        flex-grow: 1;
+        padding-left: 15px;
+        justify-content: left;
+      }
+
+      .controlBox {
+        min-width: 100px;
+        display: flex;
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+
+        span {
+          //border:none;
+          cursor: pointer;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .header {
+      height: 30px !important;
+      background: rgba(0, 0, 0, 0.02);
+
+      .controlBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+      }
+    }
+  }
+}

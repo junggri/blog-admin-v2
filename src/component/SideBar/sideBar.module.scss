@@ -1,0 +1,60 @@
+.sideBar {
+  background: #283747;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  height: 100vh;
+  padding: 1rem;
+  color: white;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+
+
+  .menu {
+    //font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  ul {
+    margin-top: 20px;
+
+    li {
+      //border: 1px solid white;
+      cursor: pointer;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      //margin-bottom: 10px;
+      justify-content: space-between;
+      font-size: 0.9rem;
+
+      span {
+        display: flex;
+      }
+    }
+  }
+
+  .typeOfPost {
+    //border: 1px solid red;
+    overflow: hidden;
+    transition: 0.2s all;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      cursor: pointer;
+      padding: 12px;
+      font-size: 0.9rem;
+      align-items: center;
+
+      span {
+        display: flex;
+      }
+
+      span:nth-child(1) {
+        font-size: 0.7rem;
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  gap: 50px;
+  //padding: 1rem;
+  //padding-right: 100px;
+  //padding-top: 40px;
+  //border: 1px solid black;
+
+  .body {
+    flex-grow: 1;
+    height: 100vh;
+    //padding: 20px 0;
+
+  }
+
+}
+
+.init {
+  padding: 0;
+  margin: 0;
+  //border: 1px solid black;
+}

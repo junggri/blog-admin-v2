@@ -1,0 +1,68 @@
+.HashTags {
+  margin-top: 15px;
+
+  div {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .hashBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    li {
+      transition: 0.2s all;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      font-size: 13px;
+      border-radius: 5px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    .makeBox {
+      position: relative;
+      height: 30px;
+      width: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+
+      input {
+        border-right: inherit;
+        border: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+      }
+
+    }
+
+    .button {
+      cursor: pointer;
+      margin-left: 15px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+
+
+      span {
+        font-size: 14px !important;
+        font-weight: 500;
+      }
+    }
+  }
+}

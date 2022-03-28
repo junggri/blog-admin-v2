@@ -1,0 +1,11 @@
+.modalItem {
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 400;
+  background: white;
+  z-index: 999;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
+}

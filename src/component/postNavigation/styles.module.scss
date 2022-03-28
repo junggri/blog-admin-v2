@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.navigation {
+  height: 40px;
+  display: flex;
+  background: $icon-link-color;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  
+  div {
+    //border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  div:not(:last-child) {
+    border-right: 1px solid white;
+  }
+
+  .check, .number {
+    width: $width5;
+    min-width: $width5
+  }
+
+  .content {
+    width: $width50;
+    min-width: $width50;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .createdAt {
+    width: $width10;
+    min-width: $width10;
+  }
+
+  .viewed, .reply, .setting {
+    width: $width10;
+    min-width: $width10;
+  }
+
+}
+

@@ -1,0 +1,7 @@
+@import "../../styles/variables";
+
+.landing {
+  @include responsive;
+  margin: 0 auto;
+  padding: 1rem;
+}

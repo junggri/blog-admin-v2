@@ -1,0 +1,15 @@
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 15px;
+
+  div {
+    //border: 1px solid red;
+    margin-right: 15px;
+  }
+}

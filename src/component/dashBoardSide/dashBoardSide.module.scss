@@ -1,0 +1,49 @@
+.dashBoardSide {
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  padding: 40px;
+
+  h1 {
+    font-size: 1.125rem;
+  }
+
+  ul {
+    margin-top: 30px;
+
+    li:not(:last-child) {
+      border-bottom: 1px solid black;
+    }
+
+    li {
+
+      padding: 10px 0;
+
+      span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      span:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      span:nth-child(2) {
+        height: 100%;
+        font-size: 1.125rem;
+        margin-right: 20px;
+        width: 100px;
+      }
+
+      span:nth-child(3) {
+
+      }
+    }
+  }
+}

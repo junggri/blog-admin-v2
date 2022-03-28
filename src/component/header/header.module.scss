@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.header {
+  //border: 1px solid black;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+
+  section {
+    display: flex;
+  }
+
+  div {
+    font-weight: bold;
+    padding: 15px 0;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .writeBtn {
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 20px;
+    width: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 12px;
+  }
+}

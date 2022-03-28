@@ -1,0 +1,68 @@
+$max-width: 1300px;
+$mainColor: #0F3AD1;
+$padding: 15px;
+$item-min-width: calc(300px + 32px);
+
+$padding-top: 100px;
+$head-color: #262d3d;
+$body-color: #48525c;
+$body-color-alt: #767676;
+$body-bg-color: #fefefe;
+$body-bg-color-sec: #fafafc;
+$link-color: #204ecf;
+$link-bg-color: #204ecf;
+$icon-color: #48525c;
+$icon-alt-color: #767676;
+$icon-link-color: #204ecf;
+$header-text: #262d3d;
+$header-text-alt: #767676;
+$header-bg-color: #fefefe;
+$header-icon: #262d3d;
+$header-icon-alt: #48525c;
+$header-icon-sec: #767676;
+$header-icon-link: #204ecf;
+$header-height: 60px;
+$nav-text: #262d3d;
+$nav-text-alt: #48525c;
+$foot-text: #48525c;
+$foot-text-alt: #767676;
+$foot-bg: #f7f7f7;
+$foot-icon: #48525c;
+$foot-icon-alt: #767676;
+$highlight-bg: #f6f6f6;
+$highlight-color: #2f3337;
+$highlight-orange: #b75501;
+$highlight-blue: #015692;
+$highlight-green: #54790d;
+$highlight-red: #f15a5a;
+$highlight-comment: #656e77;
+$font-head: 'Roboto', 'Noto Sans', 'Noto Sans KR', 'Helvetica Neue', 'Malgun Gothic', 'SF Pro KR', 'Arial', 'sans-serif';
+$font-body: 'Roboto', 'Noto Sans', 'Noto Sans KR', 'Helvetica Neue', 'Malgun Gothic', 'SF Pro KR', 'Arial', 'sans-serif';
+$font-body-alt: 'Roboto', 'Noto Sans', 'Noto Sans KR', 'Helvetica Neue', 'Malgun Gothic', 'SF Pro KR', 'Arial', 'sans-serif';
+$font-code: 'Fira Mono', monospace;
+$item-title-size: 1.1rem;
+$item-title-size-2: .9rem;
+$dark-text: #fefefe;
+$dark-text-alt: #989b9f;
+$dark-link: #005af0;
+$dark-bg: #1e1e1e;
+$dark-bg-alt: #2d2d30;
+$dark-bg-sec: #252526;
+
+
+@mixin responsive {
+  max-width: calc(#{$item-min-width} * 5);
+  @media(max-width: 1800px) {
+    max-width: calc(#{$item-min-width} * 4);
+  }
+  @media(max-width: 1400px) {
+    max-width: calc(#{$item-min-width} * 3);
+  }
+  @media(max-width: 1030px) {
+    max-width: calc(#{$item-min-width} * 2);
+  }
+}
+
+$width5: 5%;
+$width50: 50%;
+$width10: 10%;

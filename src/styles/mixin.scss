@@ -1,0 +1,25 @@
+$mobile-contents-width: 720px;
+
+@mixin scale($property, $px) {
+  $w: 1px / $mobile-contents-width * 100;
+  $pxs: null;
+  $vws: null;
+
+  @each $v in $px {
+    @if type-of($v) == 'number' {
+      $px: $v / 1px;
+      $vw: $px * $w;
+      $vw: $vw * 2;
+      $pxs: append($pxs, if($px == 0, 0, $px + px));
+      $vws: append($vws, if($vw == 0, 0, $vw + vw));
+    } @else {
+      $pxs: append($pxs, $v);
+      $vws: append($vws, $v);
+    }
+  }
+
+  #{$property}: $pxs;
+  @media (max-width: $mobile-contents-width) {
+    #{$property}: $vws;
+  }
+}

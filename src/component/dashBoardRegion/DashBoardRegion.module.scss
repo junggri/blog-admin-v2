@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+
+.dashBoardRegion {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1.1px;
+  transition: 0.2s all;
+
+  &:hover {
+    background: #204ecf;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.15);
+  }
+
+  //font-size: 1.125rem;
+  //display: inline-block;
+  //padding: 10px;
+  //border-radius: 4px;
+  //background: $link-bg-color;
+  //color: white;
+  //border: 1px solid white;
+  //cursor: pointer;
+  //font-weight: 600;
+  .regionBox {
+  }
+
+  //.itemBox {
+  //  margin-bottom: 15px;
+  //  flex-direction: column;
+  //  height: 0;
+  //  overflow: hidden;
+  //  transition: 0.2s all;
+  //}
+}
+
+.regionData {
+  border: 1px solid black;
+}

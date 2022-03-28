@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+
+.container {
+  position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  padding: -20px;
+
+  .editor {
+    border: 1px solid red !important
+  }
+
+  .button {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 14px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: $mainColor;
+    color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.slide {
+  right: 0 !important;
+}
